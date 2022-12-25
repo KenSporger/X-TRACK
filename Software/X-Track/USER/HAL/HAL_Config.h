@@ -41,13 +41,12 @@
 #define CONFIG_SCREEN_CS_PIN        PB0
 #define CONFIG_SCREEN_DC_PIN        PA4
 #define CONFIG_SCREEN_RST_PIN       PA6
-#define CONFIG_SCREEN_SCK_PIN       PA5
-#define CONFIG_SCREEN_MOSI_PIN      PA7
+#define CONFIG_SCREEN_SCK_PIN       PA5  // SPI1
+#define CONFIG_SCREEN_MOSI_PIN      PA7  // SPI1
 #define CONFIG_SCREEN_BLK_PIN       PB1  // TIM3
-#define CONFIG_SCREEN_SPI           SPI
-
-#define CONFIG_SCREEN_HOR_RES       240
-#define CONFIG_SCREEN_VER_RES       240
+#define CONFIG_SCREEN_SPI           SPI  // SPI1
+#define CONFIG_SCREEN_HOR_RES       240  // Horizontal pixels
+#define CONFIG_SCREEN_VER_RES       240  // Vertical pixels
 
 /* Battery */
 #define CONFIG_BAT_DET_PIN          PA1
@@ -67,9 +66,9 @@
 #define CONFIG_IMU_INT1_PIN         PB10
 #define CONFIG_IMU_INT2_PIN         PB11
 
-/* I2C */
-#define CONFIG_MCU_SDA_PIN          PB7
-#define CONFIG_MCU_SDL_PIN          PB6
+/* I2C, for LSM6DSM;LIS3MDL */
+#define CONFIG_MCU_SDA_PIN          PB7  // WIRE_SDA_PIN
+#define CONFIG_MCU_SDL_PIN          PB6  // WIRE_SCL_PIN
 
 /* Encoder */
 #define CONFIG_ENCODER_B_PIN        PB5

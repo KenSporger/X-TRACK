@@ -1,4 +1,4 @@
-# X-TRACK
+# X-TRACK复刻版
 > 开源GPS自行车码表。
 > 
 > 拥有可显示实时位置的离线地图。
@@ -27,6 +27,20 @@
 * 10.电源管理: LP5907-3.3 + MCP73831
 * 11.外壳: 3D打印 光固化
 
+| 名称                                                         | 说明                                    | 个数 | 价格/元 |
+| ------------------------------------------------------------ | --------------------------------------- | ---- | ------- |
+| [AT32F403ACGU7](https://item.taobao.com/item.htm?spm=a230r.1.14.42.21e23d645o0kTc&id=688717523590&ns=1&abbucket=4#detail) | 国产雅特力芯片，QFN48(6*6)              | 1    | 10      |
+| [中景园 ST7789 IPS 1.54inch屏幕](https://item.taobao.com/item.htm?id=600467790218&ali_refid=a3_430673_1006:1151926661:N:RJwpqEZSBeef9oplU%2FG0erdQXHNUIGLMbjxUjePoUps%3D:c5e666e29cd76924d1848b0193797d52&ali_trackid=1_c5e666e29cd76924d1848b0193797d52&spm=a2e0b.20350158.31919782.1) | SPI接口 240x240分辨率 60Hz刷新率 焊接式 | 1    | 13.5    |
+| [中景园 ST7789 IPS 1.54inch屏幕](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-23991449512.17.1768703bH4HJ05&id=674857510309) + [12pin FPC插座](https://item.taobao.com/item.htm?spm=2013.1.0.0.6d085ccaXaBTl1&id=565131541304&scm=1007.12144.95220.42296_0_0&pvid=1c2a199b-1f2d-433a-87e7-73e39c1c54f5&utparam=%7B%22x_hestia_source%22%3A%2242296%22%2C%22x_object_type%22%3A%22item%22%2C%22x_hestia_subsource%22%3A%22default%22%2C%22x_mt%22%3A0%2C%22x_src%22%3A%2242296%22%2C%22x_pos%22%3A1%2C%22wh_pid%22%3A-1%2C%22x_pvid%22%3A%221c2a199b-1f2d-433a-87e7-73e39c1c54f5%22%2C%22scm%22%3A%221007.12144.95220.42296_0_0%22%2C%22x_object_id%22%3A565131541304%7D) | SPI接口 240x240分辨率 60Hz刷新率 插接式 | 1    | 18.7    |
+| [6轴IMU LSM6DSM](https://item.taobao.com/item.htm?spm=a230r.1.14.1.5111601fNoKlFT&id=681603401815&ns=1&abbucket=1#detail) | 丝印LGA-14，注意安装方向                | 1    | 12      |
+| [地磁计 LIS3MDL](https://item.taobao.com/item.htm?spm=a230r.1.14.1.313a4d8fZxrJbg&id=671364707030&ns=1&abbucket=1#detail) | 丝印LGA-12，注意安装方向                | 1    | 11.8    |
+| [中科微HT1818Z3G5L GPS芯片flash版](https://item.taobao.com/item.htm?spm=a230r.1.14.27.22387a54XGjRUT&id=669752725912&ns=1&abbucket=4#detail) | 中科微GPS                               | 1    | 18.9    |
+| [MITSUMI美上美拨轮编码器](https://item.taobao.com/item.htm?spm=a230r.1.14.1.2fb54f9eec557f&id=596202182869&ns=1&abbucket=4#detail) | 封装SIQ-02FVS3，开关15定位              | 1    | 7       |
+| [自弹式TF卡座](https://detail.tmall.com/item.htm?ali_refid=a3_430582_1006:1104520036:N:iHEpUPPUKN1OQUgmeL6hRicPE%20jb6TeW:705b802e5b23b0509e3d23057cf767c7&ali_trackid=1_705b802e5b23b0509e3d23057cf767c7&id=20693027604&spm=a230r.1.14.1&skuId=3807453352314) | 14.75mm*14.50mm，焊脚间距1.1mm          | 5    | 2.37    |
+|                                                              |                                         |      |         |
+
+
+
 ## 功能
 * 1.支持速度、距离、时间、卡路里、航向显示
 * 2.拥有**离线地图**，支持显示实时位置，支持缩放
@@ -48,12 +62,4 @@ https://user-images.githubusercontent.com/26767803/120889722-1f8d8e80-c631-11eb-
 ![image](https://github.com/FASTSHIFT/X-TRACK/blob/main/Images/%E8%BF%90%E5%8A%A8%E8%BD%A8%E8%BF%B9.png)
 
 ## 致谢
-> 感谢[@davidce](https://www.geek-workshop.com/home.php?mod=space&uid=204)贡献的参考设计“[自制基于arduino的GPS地图导航系统3.0](https://www.geek-workshop.com/thread-8835-1-1.html)”。
-
-> 感谢[@W-Mai](https://github.com/W-Mai)改进的[地图下载链接生成工具](https://github.com/W-Mai/XLocateDownloader/releases/download/1.0.0/MapDownloader.zip)、[地图下载器](https://github.com/W-Mai/XLocateDownloader)、[LVGL图片转换器(Python版)](https://github.com/W-Mai/lvgl_image_converter)、[批量文件重命名工具](https://github.com/W-Mai/filename_renamer)。
-
-> 感谢[@Trigger-CN](https://github.com/Trigger-CN)的[UI设计](https://github.com/FASTSHIFT/X-TRACK/tree/main/ArtDesign)。
-
-> 感谢[@MouriNaruto](https://github.com/MouriNaruto)的LVGL Visual Studio模拟器[lv_sim_visual_studio](https://github.com/lvgl/lv_sim_visual_studio)。
-
-> 感谢[@dj140](https://github.com/dj140)编写[地图下载教程](https://github.com/FASTSHIFT/X-TRACK/blob/main/Tools/README.md)。
+> 感谢[@FASTSHIFT](https://github.com/FASTSHIFT)开源的[X-TRACK项目](https://github.com/FASTSHIFT/X-TRACK)。
